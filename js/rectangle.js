@@ -19,3 +19,12 @@ function calculateRectangleArea() {
     inputFieldRectangleWidth.value = '';
     rectangleHeightField.value = '';
 }
+
+document.getElementById('triangle_bg').addEventListener('mousemove', function() {
+    document.getElementById('triangle_bg').style.backgroundColor = '#FBBCED';
+})
+
+
+document.getElementById('rhombus_bg').addEventListener('mousemove', function () {
+    document.getElementById('rhombus_bg').style.backgroundColor = '#69C7F0';    
+})
