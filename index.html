@@ -88,10 +88,10 @@
                             <h2 class="card-title text-2xl font-bold mb-2">Triangle</h2>
                             <p class="text-base font-normal">Area (A) = 0.5 &times; b &times; h</p>
                             <div class="mb-10 flex gap-2">
-                                <input type="number" placeholder="b" id="triangle_b"
+                                <input type="text" placeholder="b" id="triangle_b"
                                     class="w-20 rounded-md bg-[#F1F1F1] p-1 pl-3">
                                 <label for="triangle_b" class="mr-1">cm</label>
-                                <input type="number" placeholder="h" id="triangle_h"
+                                <input type="text" placeholder="h" id="triangle_h"
                                     class="w-20 rounded-md bg-[#F1F1F1] p-1 pl-3">
                                 <label for="triangle_h">cm</label>
                             </div>
@@ -118,10 +118,10 @@
                             <h2 class="card-title text-2xl font-bold mb-2">Rectangle</h2>
                             <p class="text-base font-normal">Area (A) = w &times; l</p>
                             <div class="mb-10 flex gap-2">
-                                <input type="number" placeholder="w" id="rectangle_w"
+                                <input type="text" placeholder="w" id="rectangle_w"
                                     class="w-20 rounded-md bg-[#F1F1F1] p-1 pl-3">
                                 <label for="rectangle_w" class="mr1">cm</label>
-                                <input type="number" placeholder="l" id="rectangle_l"
+                                <input type="text" placeholder="l" id="rectangle_l"
                                     class="w-20 rounded-md bg-[#F1F1F1] p-1 pl-3">
                                 <label for="rectangle_l">cm</label>
                             </div>
@@ -146,10 +146,10 @@
                             <h2 class="card-title text-2xl font-bold mb-2">Parallelogram</h2>
                             <p class="text-base font-normal">Area (A) = b &times; h</p>
                             <div class="mb-10 flex gap-2">
-                                <input type="number" placeholder="b" id="parallelogram_b"
+                                <input type="text" placeholder="b" id="parallelogram_b"
                                     class="w-20 rounded-md bg-[#F1F1F1] p-1 pl-3">
                                 <label for="parallelogram_b" class="mr1">cm,</label>
-                                <input type="number" placeholder="h" id="parallelogram_h"
+                                <input type="text" placeholder="h" id="parallelogram_h"
                                     class="w-20 rounded-md bg-[#F1F1F1] p-1 pl-3">
                                 <label for="parallelogram_h">cm</label>
                             </div>
@@ -175,10 +175,10 @@
                             <p class="text-base font-normal">Area (A) = 0.5 &times; d<sub>1</sub> &times; d<sub>2</sub>
                             </p>
                             <div class="mb-10 flex gap-2">
-                                <input type="number" placeholder="d1" id="rhombus_d1"
+                                <input type="text" placeholder="d1" id="rhombus_d1"
                                     class="w-20 rounded-md bg-[#F1F1F1] p-1 pl-3">
                                 <label for="rhombus_d1" class="mr1">cm</label>
-                                <input type="number" placeholder="d2" id="rhombus_d2"
+                                <input type="text" placeholder="d2" id="rhombus_d2"
                                     class="w-20 rounded-md bg-[#F1F1F1] p-1 pl-3">
                                 <label for="rhombus_d2">cm</label>
                             </div>
@@ -197,18 +197,23 @@
                         </figure>
                         <div class="card-body items-center text-center text-[#414141] mb-5">
                             <h2 class="card-title text-2xl font-bold mb-2">Pentagon</h2>
-                            <p class="text-base font-normal">Area (A) = 0.5 &times; b &times; h</p>
+                            <p class="text-base font-normal">Area (A) = 0.5 &times; p &times; b</p>
                             <div class="mb-10 flex gap-2">
-                                <input type="number" placeholder="p" id="pentagon_p"
+                                <input type="text" placeholder="p" id="pentagon_p"
                                     class="w-20 rounded-md bg-[#F1F1F1] p-1 pl-3">
                                 <label for="pentagon_p" class="mr1">cm,</label>
-                                <input type="number" placeholder="b" id="pentagon_b"
+                                <input type="text" placeholder="b" id="pentagon_b"
                                     class="w-20 rounded-md bg-[#F1F1F1] p-1 pl-3">
                                 <label for="pentagon_b">cm</label>
                             </div>
+                            <div>
+                                <p>Area: <span id="pentagon_area_field">0</span> cm<sup>2</sup></p>
+                            </div>
                             <div class="card-actions w-full">
                                 <button
-                                    class="btn btn-primary w-full font-bold text-white_color bg-sky-500 border-sky-500 text-xl">Calculate</button>
+                                    class="btn btn-primary w-full font-bold text-white_color bg-sky-500 border-sky-500 text-xl"
+                                    onclick="areaOfPentagon()">Calculate
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -223,10 +228,10 @@
                             <h2 class="card-title text-2xl font-bold mb-2">Ellipse</h2>
                             <p class="text-base font-normal">Area (A) = &pi;ab</p>
                             <div class="mb-10 flex gap-2">
-                                <input type="number" placeholder="a" id="ellipse_a"
+                                <input type="text" placeholder="a" id="ellipse_a"
                                     class="w-20 rounded-md bg-[#F1F1F1] p-1 pl-3">
                                 <label for="ellipse_a" class="mr1">cm,</label>
-                                <input type="number" placeholder="b" id="ellipse_b"
+                                <input type="text" placeholder="b" id="ellipse_b"
                                     class="w-20 rounded-md bg-[#F1F1F1] p-1 pl-3">
                                 <label for="ellipse_b">cm</label>
                             </div>
@@ -267,8 +272,11 @@
         <!-- Rectangle Area. -->
         <script src="js/rectangle.js"></script>
 
-        <!-- Parallelogram. -->
-        <script src="js/paralelogram.js"></script>
+        <!-- Parallelogram Area. -->
+        <script src="js/parallelogram.js"></script>
+
+        <!-- Pentagon Area. -->
+        <script src="js/pentagon.js"></script>
 
     </body>
 
