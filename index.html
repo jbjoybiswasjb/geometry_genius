@@ -118,16 +118,17 @@
                             <h2 class="card-title text-2xl font-bold mb-2">Rectangle</h2>
                             <p class="text-base font-normal">Area (A) = w &times; l</p>
                             <div class="mb-10 flex gap-2">
-                                <input type="number" placeholder="w" id="rectangle_w"
-                                    class="w-20 rounded-md bg-[#F1F1F1] p-1 pl-3">
+                                <input type="number" placeholder="w" id="rectangle_w" class="w-20 rounded-md bg-[#F1F1F1] p-1 pl-3">
                                 <label for="rectangle_w" class="mr1">cm</label>
-                                <input type="number" placeholder="l" id="rectangle_l"
-                                    class="w-20 rounded-md bg-[#F1F1F1] p-1 pl-3">
+                                <input type="number" placeholder="l" id="rectangle_l" class="w-20 rounded-md bg-[#F1F1F1] p-1 pl-3">
                                 <label for="rectangle_l">cm</label>
                             </div>
+                            <div>
+                                <p>Area: <span id="rectangle_area">0</span> cm<sup>2</sup></p>
+                            </div>
                             <div class="card-actions w-full">
-                                <button
-                                    class="btn btn-primary w-full font-bold text-white_color bg-sky-500 border-sky-500 text-xl" onclick="calculateRectangleArea()">Calculate
+                                <button class="btn btn-primary w-full font-bold text-white_color bg-sky-500 border-sky-500 text-xl"
+                                    onclick="calculateRectangleArea()">Calculate
                                 </button>
                             </div>
                         </div>
