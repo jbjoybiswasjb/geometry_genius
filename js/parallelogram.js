@@ -19,7 +19,7 @@ function parallelogramAreaCalculation() {
     
     // console.log(AreaOfParallelogram);
 
-    setInnerTextById('parallelogram_area_element', area);
+    setInnerTextById('parallelogram_area_element', AreaOfParallelogram);
 }
 
 
