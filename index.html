@@ -97,7 +97,7 @@
                             </div>
                             <div>
                                 <p>
-                                    Area: <span id="triangle_area"></span> cm<sup>2</sup>
+                                    Area: <span id="triangle_area">0</span> cm<sup>2</sup>
                                 </p>
                             </div>
                             <div class="card-actions w-full">
@@ -154,7 +154,7 @@
                                 <label for="parallelogram_h">cm</label>
                             </div>
                             <div>
-                                <p>Area: <span id="parallelogram_area_element"></span> cm<sup>2</sup></p>
+                                <p>Area: <span id="parallelogram_area_element">0</span> cm<sup>2</sup></p>
                             </div>
                             <div class="card-actions w-full">
                                 <button
@@ -182,9 +182,12 @@
                                     class="w-20 rounded-md bg-[#F1F1F1] p-1 pl-3">
                                 <label for="rhombus_d2">cm</label>
                             </div>
+                            <div>
+                                <p>Area: <span id="rhombus_area_element">0</span> cm<sup>2</sup></p>
+                            </div>
                             <div class="card-actions w-full">
                                 <button
-                                    class="btn btn-primary w-full font-bold text-white_color bg-sky-500 border-sky-500 text-xl">Calculate</button>
+                                    class="btn btn-primary w-full font-bold text-white_color bg-sky-500 border-sky-500 text-xl" onclick="calculateAreaOfRhombus()">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -285,6 +288,9 @@
 
         <!-- Ellipse Area. -->
         <script src="js/ellipse.js"></script>
+
+        <!-- Rhombus Area. -->
+        <script src="js/rhombus.js"></script>
 
     </body>
 
