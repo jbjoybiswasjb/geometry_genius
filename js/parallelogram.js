@@ -28,6 +28,7 @@ function getInputValueById(elementId) {
     const inputStringValue = inputField.value;
     const inputFloatValue = parseFloat(inputStringValue);
     // console.log(inputFloatValue);
+    inputField.value = '';
     return inputFloatValue;
 }
 
