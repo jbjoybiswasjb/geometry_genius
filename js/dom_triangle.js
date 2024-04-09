@@ -26,4 +26,7 @@ function calculateTriangleArea() {
     // Set Value in HTML Page.
     const spanForTriangleArea = document.getElementById('triangle_area');
     spanForTriangleArea.innerText = TriangleArea;
+
+    triangleBaseInput.value = '';
+    triangleHeightInput.value = '';
 }
