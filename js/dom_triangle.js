@@ -20,7 +20,7 @@ function calculateTriangleArea() {
     const triangleHeightInputText = triangleHeightInput.value;
     const triangleHeight = parseFloat(triangleHeightInputText);
 
-    // Trinangle Area.
+    // Triangle Area.
     const TriangleArea = 0.5 * triangleBase * triangleHeight;
     
     // Set Value in HTML Page.
